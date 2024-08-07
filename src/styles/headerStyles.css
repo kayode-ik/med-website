@@ -6,15 +6,25 @@
   }
   .headerLeft {
     margin-left: 0.5rem !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   .headerRight {
-    margin-right: 0.5rem;
+    margin-right: 0.5rem !important;
+  }
+  .webHeaderText p {
+    display: none;
+  }
+  .mobileHeaderText p {
+    font-size: 11px !important;
+    line-height: unset !important;
   }
   .mobileIndex {
     z-index: 99;
     position: fixed;
     /* top: 3rem; */
-    top: 50px;
+    top: 55px;
     left: 0;
     height: calc(100% - 50px);
     /* height: 100vh; */
@@ -35,7 +45,7 @@
   }
   .mobileIndex button {
     font-weight: 650;
-    color: #d33333;
+    color: black;
     letter-spacing: 0.1rem;
   }
   .borderMobile {
@@ -58,7 +68,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
-    color: #001878;
+    color: #000;
     text-align: center;
   }
   .contactLeft h3 {
@@ -115,6 +125,9 @@
   }
   .headerLeft img {
     width: 4.3rem;
+  }
+  .mobileHeaderText p {
+    display: none;
   }
   .headerRight img {
     width: 1.5rem;
@@ -195,6 +208,24 @@
     transform: translateX(-100%);
   }
   .contactListFlex {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .headerLogoText p {
+    color: var(--text-color) !important
+    ;
+  }
+  .headerTextLi a {
+    color: var(--text-color) !important;
+  }
+  .flexHeaderLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .mobileHeaderText p {
     display: none;
   }
 }

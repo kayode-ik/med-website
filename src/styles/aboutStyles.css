@@ -1,0 +1,288 @@
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .aboutMissionContainer,
+  .aboutHistoryContainer,
+  .aboutTeamContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .aboutMissionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .missionLeftMobile {
+    padding-bottom: 1rem;
+  }
+  .missionLeft h2 {
+    padding-bottom: 1rem;
+  }
+  .missionRightWeb {
+    display: none;
+  }
+
+  /* History of the house */
+  .aboutHistoryContentWrapper {
+    margin-top: 2rem;
+  }
+  .aboutHistoryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.1rem;
+    letter-spacing: 0.1px;
+    padding-bottom: 2rem;
+  }
+
+  /* Team Members */
+  .aboutTeamFlex {
+    margin-top: 3rem;
+  }
+  .aboutTeamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding-bottom: 3rem;
+  }
+  .aboutTeamMember h3 {
+    margin-top: 1rem;
+  }
+}
+
+/* web */
+@media only screen and (min-width: 1025px) {
+  .aboutClient {
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .missionFlexTab {
+    display: flex;
+  }
+
+  .missionLeftMobile {
+    display: none;
+  }
+  .missionLeft {
+    flex: 0.5;
+  }
+  .missionLeft h2 {
+    text-align: left !important;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 2rem;
+  }
+  .missionLeft p {
+    text-align: left !important;
+    font-size: 14px !important;
+    line-height: 1.4rem;
+    /* color: #848484; */
+
+  }
+
+  .missionRightWeb {
+    flex: 0.5;
+  }
+  .aboutMissionContainer,
+  .aboutHistoryContainer,
+  .aboutTeamContainer {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 5rem;
+    margin-bottom:8rem;
+  }
+
+  .aboutMissionWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+  }
+  .aboutHistoryWrapper h2{
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .aboutHistoryContentWrapper h2 {
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 0.5rem;
+    margin-bottom: unset
+    ;
+  }
+  .aboutHistoryContentWrapper p {
+    /* color: #848484; */
+    font-size: 14px;
+    line-height: 1.4rem;
+    width: 85%;
+  }
+  .aboutHistoryContent {
+    margin-bottom: 2rem;
+  }
+  .aboutHistoryContent span{
+    font-size: 14px;
+  }
+   .aboutTeamWrapper h2{
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .aboutTeamFlex {
+    display: flex;
+    gap: 3rem;
+  }
+  .aboutTeamMember {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+ /* .aboutTeamMember p {
+    color: ;
+ } */
+
+
+  
+}
+
+/* Tablet mode */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .missionContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .missionWrapper {
+    flex-direction: column;
+  }
+  .missionFlexTab {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mission1 {
+    width: auto;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .mission1 span {
+    font-size: 18px;
+  }
+  .mission1 h2 {
+    font-size: 46px;
+  }
+
+  .missionContent p {
+    font-size: 18px;
+  }
+  .mission2 {
+    width: auto;
+  }
+
+  .mobileVision h3 {
+    font-size: 28px;
+  }
+  .missTop span {
+    font-size: 16px !important;
+  }
+
+  .mobileMission h3 {
+    font-size: 28px;
+  }
+  .missBottom span {
+    font-size: 16px !important;
+  }
+
+  .mission3 img {
+    height: 37vh;
+    object-fit: cover;
+    aspect-ratio: 16 / 6;
+  }
+  .clientWrapper {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .webWrapperFull {
+    display: none;
+  }
+  .clientContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .aboutClient {
+    flex-direction: column;
+  }
+  .gridFlow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .clientText {
+    /* margin-top: 6rem; */
+    text-align: center;
+    font-size: 3rem;
+  }
+  .clientImages {
+    margin-bottom: 3rem;
+  }
+  .flexClient {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flex-itemImg {
+    flex: 0 0 calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .flex-itemImg img {
+    width: 60% !important;
+  }
+
+  .textWork h2 {
+    font-size: 3rem;
+  }
+  .certificationContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .certTent {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .certTent span {
+    font-size: 2rem;
+  }
+
+  .certificateWrapper {
+    flex-direction: column-reverse;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .certificateLeft {
+    padding-left: inherit;
+    padding-top: unset;
+  }
+  .certificateLeft p {
+    /* text-align: center; */
+    width: auto !important;
+    font-size: 1.3rem;
+    /* padding-bottom: 1.5rem; */
+  }
+
+  .certificateRight img {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .certificationContainerWeb,
+  .mobileCert {
+    display: none;
+  }
+}

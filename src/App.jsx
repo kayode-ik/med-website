@@ -7,6 +7,7 @@ import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contacts";
 import Header from "./component/Header";
 import HomePage from "./pages/Home";
+import AmenitiesPage from "./pages/Amenities";
 // import NotFoundPage from "./pages/NotFound";
 // import SingleServicesPage from "./pages/Services/SingleServicesPage";
 // import SingleProjectPage from "./pages/Projects/SingleProjectPage";
@@ -20,6 +21,8 @@ function App() {
         <Route path="/" element={<HomePage />} exact />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/amenities" element={<AmenitiesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         {/* <Route path="/services/:slug" element={<SingleServicesPage />} /> */}
         {/* <Route
           path="/services/:slug"
@@ -27,9 +30,7 @@ function App() {
             <SingleServicesPage {...props} serveData={serviceData} />
           )}
         /> */}
-        {/* <Route path="/projects" element={<ProjectPage />} /> */}
         {/* <Route path="/projects/:slug" element={<SingleProjectPage />} /> */}
-        <Route path="/contact" element={<ContactPage />} />
         {/* <Route path="/notfound" element={<NotFoundPage />} /> */}
       </Routes>
     </BrowserRouter>

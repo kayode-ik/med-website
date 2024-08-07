@@ -1,0 +1,87 @@
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  /* .amenSection {
+    position: relative;
+    height: 40vh;
+  }
+
+  .amenSection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+
+  .amenText {
+    position: relative;
+    z-index: 2;
+  } */
+
+  .amenIndoorContainer,
+  .amenOutdoorContainer,
+  .commonAreasContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .amenIndoorWrapper h3 {
+    padding-bottom: 1rem;
+  }
+  .amencontent h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .amenIndoorGallery {
+    padding-bottom: 3rem;
+  }
+  .amenOutdoorGallery,
+  .commonAreasGallery {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* web */
+@media only screen and (min-width: 1025px) {
+  .amenIndoorContainer,
+  .amenOutdoorContainer,
+  .commonAreasContainer {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .amenIndoor,
+  .amenOutdoor,
+  .commonAreas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .amenIndoorWrapper h3 {
+    padding-bottom: 1rem;
+  }
+  .amencontent h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .amenIndoorGallery {
+    padding-bottom: 3rem;
+    /* flex: 0.5; */
+  }
+  .amenOutdoorGallery,
+  .commonAreasGallery {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Tablet mode */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}

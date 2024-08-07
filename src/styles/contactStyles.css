@@ -1,0 +1,177 @@
+/* Web Styles */
+@media only screen and (min-width: 1025px) {
+  .locationContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .imgLocation,
+  .mailLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .numbers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .locationContent1,
+  .locationContent2,
+  .locationContent3 {
+    width: 33.3%;
+  }
+
+  .locationContent2::after,
+  .locationContent3::after {
+    content: "";
+    display: block;
+    width: 1px; /* Width of the line */
+    height: 40%; /* Height of the line */
+    background-color: #ccc; /* Color of the line */
+    position: absolute;
+    /* top: 0; */
+    /* right: 0; */
+    bottom: -33rem;
+    margin-left: -6rem;
+  }
+
+  .Contactline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ffebeb; /* Color of the line */
+  }
+  .locTop img {
+    width: 3rem;
+    background: #028a0f;
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+  .imgLocation img {
+    width: 3rem;
+    background: #028a0f;
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+  .mailLocation img {
+    width: 3rem;
+    background: #028a0f;
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+
+
+
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .formCon {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .btn22 {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  .locationContainer {
+    display: none;
+  }
+}
+
+/* Tab styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .formCon {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .btn22 {
+    font-size: 24px;
+  }
+  .locationContainer {
+    flex-direction: column;
+  }
+  .locationContent1,
+  .locationContent2,
+  .locationContent3 {
+    position: relative;
+  }
+  .locationContent1,
+  .locationContent2,
+  .locationContent3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .locationContent1 img,
+  .locationContent2 img,
+  .locationContent3 img {
+    margin-left: unset !important;
+  }
+
+  .locBottom h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem;
+  }
+  .locTop h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem;
+  }
+  .locBottom span {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .locTop span {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    width: 350px;
+  }
+  .numbers p {
+    font-size: 1.2rem;
+  }
+  .tabContactLine {
+    display: none;
+  }
+  .mail p {
+    font-size: 1.2rem;
+  }
+
+  /* .locationContent1::after {
+      content: "";
+      position: absolute;
+      bottom: -12px; /* Adjust this value as needed 
+      left: 0;
+      width: calc(100% + 24px); /* Adjust for the gap 
+      border-bottom: 1px solid #ddd; /* Change the color as needed 
+    } */
+  /* .locationContent2::after {
+      content: "";
+      position: absolute;
+      bottom: -12px; /* Adjust this value as needed 
+      left: 0;
+      width: calc(100% + 24px); /* Adjust for the gap 
+      border-bottom: 1px solid #ddd; /* Change the color as needed 
+    } */
+  .imgLocation,
+  .mailLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

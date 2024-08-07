@@ -4,6 +4,7 @@ import grSmLogo from "../assets/menuIconSm.svg";
 import cancelMenu from "../assets/cancelMenu.svg";
 import { useState } from "react";
 
+// import "../styles/headerStyles.css";
 import "../styles/headerStyles.css";
 
 const Header = () => {
@@ -28,21 +29,43 @@ const Header = () => {
         menuOpen ? "menuOpen" : ""
       }`}
     >
-      <div className="headerLeft ">
-        {/* <div className="headerLeft ml-16"> */}
+      {/* <div className="headerLeft "> */}
+      <div className="headerLeft ml-16 flexHeaderLeft">
         <div className="logo">
           <Link to="/">
-            <img
-              src={dda}
-              alt="Logo"
-              className="logo w-10 lg:w-24 xl:w-32 2xl:w-36"
-            />
+            <img src={dda} alt="Logo" className="logo w-10 lg:w-16 xl:w-16" />
           </Link>
+        </div>
+        <div className="headerLogoText flex flex-col mobileHeaderText">
+          <p
+            className=" uppercase tracking-wide font-extrabold text-base"
+          >
+            Alternative DDA
+          </p>
+          <p
+            className=" uppercase tracking-wide font-extrabold text-base"
+          >
+            Home Care
+          </p>
+        </div>
+        <div className="headerLogoText flex flex-col webHeaderText ">
+          <p
+            className=" uppercase tracking-wide font-extrabold text-base"
+            style={{ color: "#765D35" }}
+          >
+            Alternative DDA
+          </p>
+          <p
+            className=" uppercase tracking-wide font-extrabold text-base"
+            style={{ color: "#765D35" }}
+          >
+            Home Care
+          </p>
         </div>
       </div>
 
-      {/* <div className="headerRight mr-24"> */}
-      <div className="headerRight">
+      <div className="headerRight mr-24">
+        {/* <div className="headerRight"> */}
         {/* Hamburger menu on the right (hidden by default on screens above 768px) */}
         <div className="headerRight flex items-center lg:hidden">
           <button
@@ -59,9 +82,9 @@ const Header = () => {
 
         {/* Navigation links for larger screens (hidden on screens below 768px) */}
         <nav className="hidden lg:flex flex-row">
-          <ul className="flex gap-8">
+          <ul className="flex gap-8 headerTextLi">
             <li
-              className={`mr-5 lg:text-base text-rgb(0, 5, 27) ${
+              className={`mr-5 lg:text-base font-semibold ${
                 location.pathname === "/" ? "active" : ""
               }`}
             >
@@ -70,7 +93,7 @@ const Header = () => {
               </Link>
             </li>
             <li
-              className={`mr-5 lg:text-base uppercase ${
+              className={`mr-5 lg:text-base uppercase font-semibold ${
                 location.pathname === "/about" ? "active" : ""
               }`}
             >
@@ -79,7 +102,7 @@ const Header = () => {
               </Link>
             </li>
             <li
-              className={`mr-5 lg:text-base text-rgb(0, 5, 27) uppercase  ${
+              className={`mr-5 lg:text-base uppercase font-semibold  ${
                 location.pathname === "/services" ? "active" : ""
               }`}
             >
@@ -87,17 +110,18 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li
-              className={`mr-5 lg:text-base text-rgb(0, 5, 27) uppercase ${
-                location.pathname === "/projects" ? "active" : ""
+            {/* Comment out for now */}
+            {/* <li
+              className={`mr-5 lg:text-base uppercase font-semibold ${
+                location.pathname === "/amenities" ? "active" : ""
               }`}
             >
-              <Link to="/projects" className="uppercase">
-                Projects
+              <Link to="/amenities" className="uppercase">
+                Amenities
               </Link>
-            </li>
+            </li> */}
             <li
-              className={`mr-5 lg:text-base text-rgb(0, 5, 27) uppercase ${
+              className={`mr-5 lg:text-base uppercase font-semibold ${
                 location.pathname === "/contact" ? "active" : ""
               }`}
             >
@@ -149,17 +173,18 @@ const Header = () => {
               <div className=" borderMobile absolute left-0  border-b-2 border-rgb(0, 5, 27)"></div>
             )}
           </li>
-          <li className="mr-5 lg:text-lg text-rgb(0, 5, 27) uppercase pb-4">
+          {/* Comment out for now */}
+          {/* <li className="mr-5 lg:text-lg text-rgb(0, 5, 27) uppercase pb-4">
             <button
-              onClick={() => handleLinkClick("/projects")}
+              onClick={() => handleLinkClick("/amenities")}
               className="uppercase"
             >
-              Projects
+              Amenities
             </button>
             {menuOpen && (
               <div className=" borderMobile absolute left-0  border-b-2 border-rgb(0, 5, 27)"></div>
             )}
-          </li>
+          </li> */}
           <li className="mr-5 lg:text-lg text-rgb(0, 5, 27) uppercase pb-4">
             <button
               onClick={() => handleLinkClick("/contact")}
@@ -173,25 +198,19 @@ const Header = () => {
           </li>
         </ul>
 
-        {/* <div className="footerContTab">
+        <div className="footerContTab">
           <h2>Contact</h2>
 
           <div className="contactListFlex">
             <div className="contactLeft">
               <h3>Phone: </h3>
-              <p>08037380078</p>
-              <p>09064230649</p>
-              <p>08078994450</p>
-              <p>08165558820</p>
+              <p>+1 443-545-1660</p>
+              <p>+1 443-545-1650</p>
             </div>
             <div className="contactRight">
               <h3>Email: </h3>
               <p>
-                info@gramenpetro <br />
-                serve.com{" "}
-              </p>
-              <p>
-                gramenpetroserve <br /> @yahoo.com
+                Altsupport1 <br /> @yahoo.com
               </p>
             </div>
           </div>
@@ -199,18 +218,15 @@ const Header = () => {
           <div className="contactListFlexTab">
             <div className="contactLeftTab">
               <h3>Phone: </h3>
-              <p>08037380078</p>
-              <p>09064230649</p>
-              <p>08078994450</p>
-              <p>08165558820</p>
+              <p>+1 443-545-1660</p>
+              <p>+1 443-545-1650</p>
             </div>
             <div className="contactRightTab">
               <h3>Email: </h3>
-              <p>info@gramenpetro serve.com </p>
-              <p>gramenpetroserve @yahoo.com</p>
+              <p> Altsupport1@yahoo.com</p>
             </div>
           </div>
-        </div> */}
+        </div>
       </nav>
     </div>
   );

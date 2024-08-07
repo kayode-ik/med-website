@@ -4,8 +4,8 @@ import "../styles/button.css";
 
 const Button = ({
   text,
-  iconLeft,
-  iconRight,
+  // iconLeft,
+  // iconRight,
   color,
   bgColor,
   width,
@@ -13,19 +13,21 @@ const Button = ({
   className,
   onClick, // Add onClick prop
   to, // Add to prop for React Router
+  iconLeft: IconLeft,
+  iconRight: IconRight,
 }) => {
   const buttonStyle = {
     color: color || "white",
-    backgroundImage: bgColor || "linear-gradient(to right, #028A0F, #90D296)",
+    backgroundColor: bgColor || "brown",
     width: width || "auto",
     height: height || "auto",
   };
 
   const buttonContent = (
     <>
-      {iconLeft && <img src={iconLeft} alt="image" className="mr-2" />}
+      {IconLeft && <IconLeft style={{ marginRight: "8px" }} />}
       {text}
-      {iconRight && <img src={iconRight} alt="image" className="ml-2" />}
+      {IconRight && <IconRight style={{ marginLeft: "8px" }} />}
     </>
   );
 
