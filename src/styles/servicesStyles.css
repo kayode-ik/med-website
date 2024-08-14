@@ -13,6 +13,12 @@
     padding-bottom: 1rem;
     padding-top: 1.5rem;
   }
+
+  .serviceItem p {
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+  }
+
   .serviceDetails {
     padding-top: 1rem;
   }
@@ -47,6 +53,16 @@
   .activity-content h4 {
     padding-bottom: 0.5rem;
   }
+
+  .activity-item p {
+    font-size: 0.8rem;
+  }
+
+
+}
+
+/* Tablet mode */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
 }
 
 /* web */
@@ -82,9 +98,18 @@
     border-bottom: none;
   } */
 
-  .serviceList :hover {
-  }
 
+  .recreationalSocialItem h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    /* color: #8b4513;  */
+    font-weight: 700;
+    /* font-size: 32px; */
+    /* padding-bottom: 2rem; */
+    /* margin-bottom: 2rem; */
+    color: var(--primary-color);
+  }
   /* Activities */
   .activity-FlexItem {
     /* display: flex;
@@ -102,7 +127,7 @@
     display: flex;
     flex-direction: column;
     /* gap: 1rem; */
-    border: 1px solid #028a0f;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
   }
   .activity-itme img {
@@ -116,8 +141,4 @@
   .activity-content h4 {
     padding-bottom: 0.5rem;
   }
-}
-
-/* Tablet mode */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
 }

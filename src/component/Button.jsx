@@ -42,7 +42,7 @@ const Button = ({
         {buttonContent}
       </Link>
     );
-  } else {
+  } else if (onClick) {
     // Otherwise, render a button element with onClick handler
     return (
       <button

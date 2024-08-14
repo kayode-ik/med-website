@@ -48,19 +48,19 @@
   }
   .locTop img {
     width: 3rem;
-    background: #028a0f;
+    background: var(--primary-color);
     padding: 0.4rem;
     border-radius: 5px;
   }
   .imgLocation img {
     width: 3rem;
-    background: #028a0f;
+    background: var(--primary-color);
     padding: 0.4rem;
     border-radius: 5px;
   }
   .mailLocation img {
     width: 3rem;
-    background: #028a0f;
+    background: var(--primary-color);
     padding: 0.4rem;
     border-radius: 5px;
   }

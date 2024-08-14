@@ -1,5 +1,7 @@
-import heroAbout from "../assets/aboutHero.svg";
-import missionImg from "../assets/missiondda.svg";
+// import heroAbout from "../assets/aboutHero.svg";
+import heroAbout from "../assets/images_stock/istock6.jpg";
+// import missionImg from "../assets/missiondda.svg";
+import missionImg from "../assets/images_stock/istock060.jpg";
 import team1 from "../assets/team1.svg";
 import Footer from "../component/Footer";
 // import team2 from "../assets/team2.svg";
@@ -41,7 +43,7 @@ const AboutPage = () => {
                 />
               </div>
               {/* mission content */}
-              <p className="text-center font-light text-xs">
+              <p className="text-center font-light text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
                 placerat turpis, ut dictum velit. Sed sed posuere neque, vel
                 consectetur velit. Quisque ultricies, eros eu malesuada semper,
@@ -69,7 +71,7 @@ const AboutPage = () => {
               {/* History 1 */}
               <div className="aboutHistoryContent history1">
                 {/* history Name */}
-                <h2 className="text-sm font-medium capitalise">
+                <h2 className="text-sm font-medium capitalise tracking-wide">
                   New Beginning
                 </h2>
                 {/* history content */}
@@ -90,7 +92,7 @@ const AboutPage = () => {
 
               <div className="aboutHistoryContent history2">
                 {/* history Name */}
-                <h2 className="text-sm font-medium capitalise">
+                <h2 className="text-sm font-medium capitalise tracking-wide">
                   Residence Expand
                 </h2>
                 {/* history content */}
@@ -109,7 +111,7 @@ const AboutPage = () => {
               {/* History 3 */}
               <div className="aboutHistoryContent history3">
                 {/* history Name */}
-                <h2 className="text-sm font-medium capitalise">
+                <h2 className="text-sm font-medium capitalise tracking-wide">
                   HomeCare Service Started
                 </h2>
                 {/* history content */}

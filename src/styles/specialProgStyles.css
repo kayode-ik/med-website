@@ -1,0 +1,108 @@
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .special-programs-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 50px 20px;
+    background-color: #f5f5dc;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #8b4513;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .program-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .program-icon {
+    margin-bottom: 20px;
+  }
+
+  .program-icon svg {
+   font-size: 30px !important;
+  }
+  .program-title {
+    font-size: 1rem !important;
+    color: #4b2e1e;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .program-description {
+    font-size: .8rem;
+    color: #4b2e1e;
+    margin-bottom: 20px;
+  }
+  .program-list {
+    text-align: left;
+    padding-left: 20px;
+    color: #4b2e1e;
+    font-size: .8rem;
+  }
+}
+
+/* web */
+@media only screen and (min-width: 1025px) {
+  .special-programs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #f5f5dc;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #8b4513;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .program-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .program-icon {
+    margin-bottom: 20px;
+  }
+
+  .program-title {
+    font-size: 1.5rem;
+    color: #4b2e1e;
+    margin-bottom: 10px;
+  }
+
+  .program-description {
+    font-size: 1rem;
+    color: #4b2e1e;
+    margin-bottom: 20px;
+  }
+
+  .program-list {
+    text-align: left;
+    padding-left: 20px;
+    color: #4b2e1e;
+  }
+}

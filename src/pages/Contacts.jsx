@@ -6,8 +6,12 @@ import phone from "../assets/call.svg";
 import mail from "../assets/mail.svg";
 
 import "../styles/contactStyles.css";
+import Button from "../component/Button";
+import { useNavigate } from "react-router-dom";
 
 const ContactPage = () => {
+
+  const navigate = useNavigate();
   return (
     <div className="contactContainer">
       <div
@@ -73,12 +77,21 @@ const ContactPage = () => {
             </div>
 
             <div className="btn flex justify-center p-4 pb-24">
-              <div
+              <Button
+                text="Submit"
+                color="white"
+                bgColor="#4b2e1e"
+                width="130px"
+                height="45px"
+                // to="#"
+                onClick={() => navigate("#")}
+              />
+              {/* <div
                 className=" btn22 text-white p-2 rounded text-center w-48 font-bold tracking-wide"
                 style={{ background: "#011359" }}
               >
                 Submit
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

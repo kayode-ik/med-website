@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import dda from "../assets/ddaLogo2.svg";
-import grSmLogo from "../assets/menuIconSm.svg";
+import grSmLogo from "../assets/menuMed.svg";
 import cancelMenu from "../assets/cancelMenu.svg";
 import { useState } from "react";
 
@@ -75,7 +75,7 @@ const Header = () => {
             {menuOpen ? (
               <img src={cancelMenu} alt="cancel" className="w-3.5" />
             ) : (
-              <img src={grSmLogo} alt="hamburger" className="w-5" />
+              <img src={grSmLogo} alt="hamburger" className=""  style={{width: "1.55rem"}}/>
             )}
           </button>
         </div>

@@ -38,6 +38,10 @@
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+  .footerContainer {
+    background-color: var(--primary-color);
+    color: white !important;;
+  }
   .footerWrapper {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -111,6 +115,12 @@
   }
   .footerLinksweb {
     display: none;
+  }
+  .footerAddress {
+    flex: 0.6;
+  }
+  .footerContact {
+    flex: 0.4;
   }
 }
 

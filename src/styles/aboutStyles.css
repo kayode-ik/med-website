@@ -51,103 +51,35 @@
   .aboutTeamMember h3 {
     margin-top: 1rem;
   }
-}
-
-/* web */
-@media only screen and (min-width: 1025px) {
-  .aboutClient {
-    justify-content: space-evenly;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
-  .missionFlexTab {
-    display: flex;
-  }
-
-  .missionLeftMobile {
-    display: none;
-  }
-  .missionLeft {
-    flex: 0.5;
-  }
-  .missionLeft h2 {
-    text-align: left !important;
-    font-weight: 700;
-    font-size: 32px;
-    padding-bottom: 2rem;
-  }
   .missionLeft p {
-    text-align: left !important;
-    font-size: 14px !important;
-    line-height: 1.4rem;
-    /* color: #848484; */
-
+    font-size: 0.8rem;
+    line-height: unset !important;
   }
 
-  .missionRightWeb {
-    flex: 0.5;
+  .history1 p {
+    font-size: 0.8rem;
   }
-  .aboutMissionContainer,
-  .aboutHistoryContainer,
-  .aboutTeamContainer {
-    margin-left: 6rem;
-    margin-right: 6rem;
-    margin-top: 5rem;
-    margin-bottom:8rem;
+  .history1 span {
+    font-size: 0.8rem;
+  }
+  .history2 p {
+    font-size: 0.8rem;
+  }
+  .history2 span {
+    font-size: 0.8rem;
   }
 
-  .aboutMissionWrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    align-items: center;
+  .history3 p {
+    font-size: 0.8rem;
   }
-  .aboutHistoryWrapper h2{
-    font-weight: 700;
-    font-size: 32px;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+  .history3 span {
+    font-size: 0.8rem;
   }
-  .aboutHistoryContentWrapper h2 {
-    font-weight: 500;
-    font-size: 18px;
-    padding-bottom: 0.5rem;
-    margin-bottom: unset
-    ;
-  }
-  .aboutHistoryContentWrapper p {
-    /* color: #848484; */
-    font-size: 14px;
-    line-height: 1.4rem;
-    width: 85%;
-  }
-  .aboutHistoryContent {
-    margin-bottom: 2rem;
-  }
-  .aboutHistoryContent span{
-    font-size: 14px;
-  }
-   .aboutTeamWrapper h2{
-    font-weight: 700;
-    font-size: 32px;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-  }
-  .aboutTeamFlex {
-    display: flex;
-    gap: 3rem;
-  }
-  .aboutTeamMember {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
- /* .aboutTeamMember p {
-    color: ;
- } */
 
+  .aboutTeamMember p {
+    font-size: 0.8rem;
 
-  
+  }
 }
 
 /* Tablet mode */
@@ -286,3 +218,111 @@
     display: none;
   }
 }
+
+/* web */
+@media only screen and (min-width: 1025px) {
+  .aboutClient {
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .missionFlexTab {
+    display: flex;
+  }
+
+  .missionLeftMobile {
+    display: none;
+  }
+  .missionLeft {
+    flex: 0.5;
+  }
+  .missionLeft h2 {
+    text-align: left !important;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  .missionLeft p {
+    text-align: left !important;
+    font-size: 16px !important;
+    line-height: 1.4rem;
+    /* color: #848484; */
+
+  }
+
+  .missionRightWeb {
+    flex: 0.5;
+  }
+  .aboutMissionContainer,
+  .aboutHistoryContainer,
+  .aboutTeamContainer {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 5rem;
+    margin-bottom:8rem;
+  }
+
+  .aboutMissionWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+  }
+  .aboutHistoryWrapper h2{
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  .aboutHistoryContentWrapper h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: unset;
+    color: var(--primary-color);
+    ;
+  }
+  .aboutHistoryContentWrapper p {
+    /* color: #848484; */
+    font-size: 15px;
+    line-height: 1.4rem;
+    width: 85%;
+  }
+  .aboutHistoryContent {
+    margin-bottom: 2rem;
+  }
+  .aboutHistoryContent span{
+    font-size: 14px;
+  }
+   .aboutTeamWrapper h2{
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  .aboutTeamFlex {
+    display: flex;
+    gap: 3rem;
+  }
+  .aboutTeamMember {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+ /* .aboutTeamMember p {
+    color: ;
+ } */
+
+ .aboutTeamMember p {
+  font-size: 0.85rem !important;
+  letter-spacing: .25px;
+ }
+
+
+  
+}
+
+

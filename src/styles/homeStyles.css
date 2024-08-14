@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
     flex-direction: column;
-    justify-content: unset !important;
+    justify-content: center !important;
     align-items: unset;
     /* height: 90vh; */
     /* height: auto; */
@@ -36,22 +36,27 @@
 
   .HeroLeftBox {
     /* margin-top: 15rem; */
-    margin-left: -1rem !important;
+    margin-left: 1.3rem !important;
     /* padding-top: 7rem; */
   }
 
   .HeroLeftBox p {
-    line-height: 3rem !important;
+    line-height: 2.7rem !important;
   }
 
   .heroSection .text-white p {
     /* Adjust font size for paragraph */
-    font-size: 39px;
+    font-size: 30px;
   }
 
   .heroSection .text-white p.font-bold {
-    font-size: 39px;
+    font-size: 30px;
     /* Adjust font size for bold paragraph */
+  }
+
+  .HeroLeftBox h1 {
+    width: 290px !important;
+    font-size: 0.78rem !important;
   }
 
   h1.text-base {
@@ -65,18 +70,12 @@
 
   .imgBorder {
     /* border: 1px solid #028a0f; */
-    border: 1.5px solid #028a0f;
+    border: 1.5px solid var(--primary-color);
     height: 30vh;
     width: 50%;
     position: relative;
     z-index: 1;
     left: 8rem;
-  }
-
-  .ddaAboutRight h2 {
-    /* position: absolute;
-    top: 44rem;
-    left: 8rem; */
   }
 
   .ddaAboutLeft {
@@ -89,13 +88,15 @@
   }
 
   .ddaAboutLeft img {
-    width: 65%;
+    width: 80%;
   }
 
   .ourServiceIconLabel {
     width: 36px;
     height: 36px;
-    background: linear-gradient(to right, #028a0f, #90d296);
+    /* background: linear-gradient(to right, #028a0f, #90d296); */
+    background: var(--primary-color);
+
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -192,6 +193,7 @@
     text-align: center;
     padding: 20px;
     /* Adjust font size, color, etc. */
+    font-size: 0.85rem;
   }
 
   .clientsReviewWrapper {
@@ -206,11 +208,11 @@
   }
 
   .client-image {
-    width: 50px;
+    width: 40px;
     /* Adjust image size */
-    height: 50px;
+    height: 40px;
     border-radius: 50%;
-    border: 2px solid green;
+    border: 2px solid var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +220,7 @@
   }
 
   .client-image img {
-    width: 2rem;
+    width: 1.5rem;
   }
 
   .client-name {
@@ -236,7 +238,24 @@
     padding-bottom: 2rem;
   }
   .newsletterContactWrapper {
-    background-image: url(../assets//newsContactBg.svg);
+    background-image: url(../assets/medBg005.svg);
+    margin-bottom: 7rem !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+  .webAboutUs h2 {
+    display: none;
+  }
+  .ddaAboutSummary {
+    font-size: 0.875rem !important;
   }
 }
 
@@ -488,15 +507,7 @@
   } */
 
 @media only screen and (min-width: 1025px) {
-  .heroFlex {
-    /* display: block !important; */
-    /* padding-top: 10rem; */
-  }
-  .HeroLeftBox {
-  }
-  .HeroRightBox {
-    /* margin-left: 10rem !important;/ */
-  }
+
   .ddaaAboutContainer {
     margin-left: 6rem !important;
     margin-right: 6rem !important;
@@ -506,16 +517,20 @@
     align-items: center;
     gap: 4rem;
   }
+  .mobileAbout {
+    display: none;
+  }
   .ddaAboutLeft {
-    flex: 0.4;
+    flex: 0.5;
   }
   .ddaAboutRight {
-    flex: 0.6;
+    flex: 0.5;
   }
   .ddaAboutRight h2 {
     text-align: left !important;
     font-weight: 700;
     font-size: 32px;
+    color: var(--primary-color);
   }
 
   .ourServicesWrapper {
@@ -524,6 +539,7 @@
   .ourServicesWrapper h2 {
     font-weight: 700;
     font-size: 32px;
+    color: var(--primary-color);
   }
 
   .ourServicesContainer {
@@ -538,11 +554,13 @@
   .ourServiceIconLabel {
     width: 36px;
     height: 36px;
-    background: linear-gradient(to right, #028a0f, #90d296);
+    /* background: linear-gradient(to right, #028a0f, #90d296); */
+    background: var(--primary-color);
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.9;
   }
   .ourServiceItem {
     display: flex;
@@ -562,7 +580,7 @@
   /* .ourServiceItem {
   } */
   .ourServiceContent h3 {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   .ourServiceContent p {
@@ -575,6 +593,7 @@
   .clientsReviewWrapper h2 {
     font-weight: 700;
     font-size: 32px;
+    color: var(--primary-color);
   }
   .slider-container {
     display: flex;
@@ -634,7 +653,7 @@
     /* Adjust image size */
     height: 30px;
     border-radius: 50%;
-    border: 2px solid green;
+    border: 2px solid #4b2e1e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,6 +691,7 @@
     text-align: left;
     /* padding: unset !important; */
     padding-bottom: 2rem;
+    color: var(--primary-color);
   }
   .ederlyCareRight {
     flex: 0.5;
@@ -681,7 +701,7 @@
   }
 
   .newsletterContactWrapper {
-    background-image: url(../assets//newsContactBg.svg);
+    background-image: url(../assets/medBg005.svg);
     margin-left: 6rem !important;
     margin-right: 6rem !important;
     margin-top: 3rem !important;
@@ -689,6 +709,9 @@
     display: flex;
     gap: 3rem;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .newsletterContactContainer {
     padding: 4rem !important;
@@ -710,7 +733,7 @@
     outline: none;
     transition: background-color 0.3s;
     z-index: 10;
-    width: 4rem;
+    width: 3rem !important;
   }
 
   .swiper-button-prev .arrow,
@@ -739,13 +762,24 @@
 
   .swiper-button-prev:hover .arrow,
   .swiper-button-next:hover .arrow {
-    background-color: rgba(255, 0, 0, 0.5); /* red color on hover */
+    background-color: #6b4226;
     color: white !important;
+    opacity: 0.3;
   }
   .swiper-button-prev:after {
-    font-size: x-large;
+    font-size: x-large !important;
   }
   .swiper-button-next:after {
-    font-size: x-large;
+    font-size: x-large !important;
   }
+
+  .newsletterItem {
+    width: 70%;
+    margin-top: -2rem;
+  }
+
+  .newsletterItem p {
+    font-size: 1rem !important;
+  }
+
 }
