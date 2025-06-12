@@ -30,26 +30,54 @@ const AboutPage = () => {
         <div className="aboutMissionContainer">
           <div className="aboutMissionWrapper">
             <div className="missionLeft">
-              {/* mission header */}
-              <h2 className="text-center text-base font-bold capitalise">
-                Our Mission
-              </h2>
-              <div className="missionLeftMobile">
-                {/* mission image */}
-                <img
-                  src={missionImg}
-                  alt="mission image"
-                  className="w-full h-full object-cover"
-                />
+              <div className="missionLefttttt">
+                {/* mission header */}
+                <h2 className="text-center font-bold capitalise text-xs">
+                  Our Mission
+                </h2>
+                <div className="missionLeftMobile">
+                  {/* mission image */}
+                  <img
+                    src={missionImg}
+                    alt="mission image"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* mission content */}
+                <p className="text-center font-light text-base">
+                  We are committed to providing services to individuals who need
+                  residential, nursing, and community waivered supports to live
+                  their lives independently throughout the communities, with a
+                  personal choice in the services that they desire. We pledge to
+                  promote dignity, respect, and individual rights as valued
+                  members of the community.
+                </p>{" "}
               </div>
-              {/* mission content */}
-              <p className="text-center font-light text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                placerat turpis, ut dictum velit. Sed sed posuere neque, vel
-                consectetur velit. Quisque ultricies, eros eu malesuada semper,
-                arcu velit condimentum nisi, vel sagittis orci risus vel felis.
-              </p>{" "}
+              <div className="missionLeftttt">
+                {/* mission header */}
+                <h2 className="text-center text-base font-bold capitalise mt-10">
+                  Our Vision
+                </h2>
+                <div className="missionLeftMobile">
+                  {/* mission image */}
+                  <img
+                    src={missionImg}
+                    alt="mission image"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* mission content */}
+                <p className="text-center font-light text-base">
+                  We are committed to providing services to individuals who need
+                  residential, nursing, and community waivered supports to live
+                  their lives independently throughout the communities, with a
+                  personal choice in the services that they desire. We pledge to
+                  promote dignity, respect, and individual rights as valued
+                  members of the community.
+                </p>{" "}
+              </div>
             </div>
+
             <div className="missionRightWeb">
               {/* mission image */}
               <img
@@ -78,10 +106,9 @@ const AboutPage = () => {
                 <p className="text-xs font-light">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                   provident quasi accusantium molestiae qui nam dolor recusandae
-                  excepturi.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  provident quasi accusantium molestiae qui nam dolor recusandae
-                  excepturi.
+                  excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Quo provident quasi accusantium molestiae qui nam dolor
+                  recusandae excepturi.
                 </p>
                 {/* history date / year */}
                 <div className="text-xs text-end font-bold">
@@ -99,9 +126,9 @@ const AboutPage = () => {
                 <p className="text-xs font-light">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                   provident quasi accusantium molestiae qui nam dolor recusandae
-                  excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  provident quasi accusantium molestiae qui nam dolor recusandae
-                  excepturi.
+                  excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Quo provident quasi accusantium molestiae qui nam dolor
+                  recusandae excepturi.
                 </p>
                 {/* history date / year */}
                 <div className="text-xs text-end font-bold">
@@ -118,9 +145,9 @@ const AboutPage = () => {
                 <p className="text-xs font-light">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                   provident quasi accusantium molestiae qui nam dolor recusandae
-                  excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  provident quasi accusantium molestiae qui nam dolor recusandae
-                  excepturi.
+                  excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Quo provident quasi accusantium molestiae qui nam dolor
+                  recusandae excepturi.
                 </p>
                 {/* history date / year */}
                 <div className="text-xs text-end font-bold">

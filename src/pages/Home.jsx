@@ -12,6 +12,8 @@ import servImg3 from "../assets/services/serve3.svg";
 import servImg4 from "../assets/services/serve4.svg";
 import servImg5 from "../assets/services/serve5.svg";
 import servImg6 from "../assets/services/serve6.svg";
+import servImg7 from "../assets/services/livingWeb.png";
+import servImg8 from "../assets/services/livingAssist.png";
 
 import openQ from "../assets/OpenQ000.svg";
 import closeQ from "../assets/CloseQ000.svg";
@@ -137,46 +139,60 @@ const HomePage = () => {
 
   const services = [
     {
-      icon: servImg1,
-      iconClass: "serv1",
-      title: "Residential Services (CLGH)",
-      description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    },
-    {
       icon: servImg2,
-      iconClass: "serv2",
-      title: "Residential care (day and hourly)",
+      iconClass: "serv1",
+      title: "Respite Services",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        " Daily or 15 min Our Respite Services offer short-term, high-quality care-available daily or in 15-minute increments-to give family caregivers time to rest and recharge. Care is flexible and can be scheduled as needed, during emergencies, or at set times. Beyond basic support, the program provides enriching experiences that promote personal growth for participants while enhancing overall well-being for both them and their caregivers.",
     },
     {
-      icon: servImg3,
-      iconClass: "serv3",
-      title: "Community Development",
+      icon: servImg1,
+      iconClass: "serv2",
+      title: "Shared Living",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        " Shared Living focuses on the long-term relationships that develop from cohabiting, creating nurturing households, and fostering close personal connections between a participant and he host family. In Shared Living, a family o ndividual offers their stable and loving home environment to a person with a disability, providing necessary care while receiving compensation for their efforts. Typical providers include single parents, retirees, and widows or widowers essentially anyone who has the capacity in their heart and home to share the variety of experiences that life presents.",
+    },
+    {
+      icon: servImg5,
+      iconClass: "serv3",
+      title: "Nursing Services",
+      description:
+        " Alternative DDA Care offers personalized Nursing Support Services provided by licensed registered nurses in Maryland. Services include nursing consultation, health case manage-ment, and delegation, all based on individual evaluations. Preauthorization from the Developmental Disabilities Administration is required and documented in the participant’s Person-Centered Plan. In addition to direct care, the program includesstaff oversight, training, and education to ensure comprehensive, high-quality support that promotes each participant’s health and well-being.",
     },
     {
       icon: servImg4,
       iconClass: "serv4",
-      title: "Personal Support",
+      title: "Employment Services",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    },
-    {
-      icon: servImg5,
-      iconClass: "serv5",
-      title: "Nurse Services",
-      description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "Our Employment Services empower individuals to pursue meaningful careers by providing personalized, time-limited support focused on employment planning. Through a discovery process that includes home visits, job trials, and employer evaluations, we help participants identify their strengths and interests to create a Discovery Profile and visual resume. Services include Discovery, Job Development, Ongoing Job Support, Follow-Along Support, Self-Employment, and Co-Worker Employment Support.",
     },
     {
       icon: servImg6,
-      iconClass: "serv6",
+      iconClass: "serv5",
       title: "Transportation Services",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "Alternative DDA Care offer non-medical support, educa-tion, and transport for the participant and their family caregiver, enabling the participant to engage in community activities as outlined in their personalized care plan.",
+    },
+    {
+      icon: servImg3,
+      iconClass: "serv6",
+      title: "Community Development Services",
+      description:
+        " Alternative DDA care provides the service in a variety of community contexts and activities, giving participants the chance to improve their social integration and independence. Every participant’s preference, objectives, and distinct goals are carefully taken into account under the guidance of a person-centered planning approach, guaranteeing that every opportunity fits with their vision for a happy and inclusive life.",
+    },
+    {
+      icon: servImg7,
+      iconClass: "serv7",
+      title: "Personal Support",
+      description:
+        "A special one-on-one program called Personal Supports gives our participant the chance to become more independent and engage with their community. In order to better fulfill our collaborative mission of ensuring that participants are completely assimilated and included in their neighborhoods, places of employment, and places of worship, we offer a comprehensive range of community-based su-pport, including improved development of the participant’s natural support system.",
+    },
+    {
+      icon: servImg8,
+      iconClass: "serv6",
+      title: "Support Living",
+      description:
+        " The Supported Living program enables participants to navigate both the triumphs and setbacks of living independently while offering support and helping them make informed choices in all areas of their lives. This program upholds the belief that every participant has the right to steer their own future and experience the full range of successes and challenges that come with pursuing true independence. We commit our time and, importantly, our expertise to finding knowledgeable men and women who can deliver the highest quality of support to our participants.",
     },
     // Add more services here
   ];
