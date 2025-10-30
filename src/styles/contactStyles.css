@@ -22,29 +22,33 @@
   .locationContent2,
   .locationContent3 {
     width: 33.3%;
+    position: relative;
   }
 
-  .locationContent2::after,
-  .locationContent3::after {
+  .locationContent1::after {
     content: "";
-    display: block;
-    width: 1px; /* Width of the line */
-    height: 40%; /* Height of the line */
-    background-color: #ccc; /* Color of the line */
     position: absolute;
-    /* top: 0; */
-    /* right: 0; */
-    bottom: -33rem;
-    margin-left: -6rem;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    background-color: #ccc;
+    transform: translateY(-50%);
+  }
+
+  .locationContent2::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    background-color: #ccc;
+    transform: translateY(-50%);
   }
 
   .Contactline {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 1px;
-    background-color: #ffebeb; /* Color of the line */
+    display: none;
   }
   .locTop img {
     width: 3rem;

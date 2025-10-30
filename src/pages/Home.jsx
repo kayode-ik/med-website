@@ -254,7 +254,10 @@ const HomePage = () => {
                         width="175px"
                         height="55px"
                         // to="/about"
-                        onClick={() => navigate("/about")}
+                        onClick={() => {
+                          navigate("/about");
+                          window.scrollTo(0, 0);
+                        }}
                       />
                     </div>
                   </div>
@@ -327,7 +330,10 @@ const HomePage = () => {
                         width="175px"
                         height="55px"
                         // to="/about"
-                        onClick={() => navigate("/services")}
+                        onClick={() => {
+                          navigate("/services");
+                          window.scrollTo(0, 0);
+                        }}
                       />
                     </div>
                   </div>
@@ -373,13 +379,7 @@ const HomePage = () => {
                 to help.
               </div>
               <div className="ddaAboutSummary font-light py-1 mb-6 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
-                labore delectus! Fuga, eius. Perspiciatis iste velit nobis ea
-                maxime quam minima, libero et eius aspernatur aut qui, modi
-                debitis vel! Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Quas, labore delectus! Fuga, eius. Perspiciatis iste velit
-                nobis ea maxime quam minima, libero et eius aspernatur aut qui,
-                modi debitis vel!
+               
               </div>
               {/* <div className="ddaAboutContent">
 
@@ -391,7 +391,10 @@ const HomePage = () => {
                 width="130px"
                 height="45px"
                 // to="/about"
-                onClick={() => navigate("/about")}
+                onClick={() => {
+                  navigate("/about");
+                  window.scrollTo(0, 0);
+                }}
               />
             </div>
           </div>
@@ -414,7 +417,7 @@ const HomePage = () => {
         {/* End Our Services Section */}
 
         {/* clients Review Section */}
-        <motion.div
+        {/* <motion.div
           className="clientsReviewWrapper pb-20"
           initial="hidden"
           animate={controls}
@@ -423,11 +426,11 @@ const HomePage = () => {
           <h2 className=" text-center text-2xl p-2 font-medium mt-12 mb-8">
             Client Reviews
           </h2>
-          <div className="clientsReviewContainer ml-[5%] mr-[5%]">
+          <div className="clientsReviewContainer ml-[5%] mr-[5%]"> */}
             {/* // Review 1 */}
-            <ReviewsCmp reviews={reviews} />
+            {/* <ReviewsCmp reviews={reviews} />
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* End clients Review Section */}
 
@@ -450,12 +453,12 @@ const HomePage = () => {
               </div>
               <div className="bestElderlyCareItem ">
                 <div className="bestElderlyCareContent">
-                  <p className="bestElderlyCareDesc text-sm pb-8">
+                  {/* <p className="bestElderlyCareDesc text-sm pb-8">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  </p>
+                  </p> */}
                   <Button
                     text="Learn More"
                     color="white"
@@ -463,7 +466,10 @@ const HomePage = () => {
                     width="130px"
                     height="45px"
                     // to="#"
-                    onClick={() => navigate("#")}
+                    onClick={() => {
+                      navigate("/services");
+                      window.scrollTo(0, 0);
+                    }}
                   />
                 </div>
               </div>
@@ -492,12 +498,12 @@ const HomePage = () => {
             </h2>
             {/* // Newsletter */}
             <div className="newsletterItem ">
-              <p className="newsletterDesc text-sm pb-5 text-black">
+              {/* <p className="newsletterDesc text-sm pb-5 text-black">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
                 veritatis culpa tempora veniam accusamus officia vitae ducimus
                 libero, recusandae porro nesciunt nulla iste quis maxime in
                 provident, quia doloremque rerum?
-              </p>
+              </p> */}
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -507,7 +513,10 @@ const HomePage = () => {
                   color="black"
                   width="130px"
                   height="45px"
-                  onClick={() => navigate("/contact")}
+                  onClick={() => {
+                    navigate("/contact");
+                    window.scrollTo(0, 0);
+                  }}
                 />
               </motion.div>
             </div>

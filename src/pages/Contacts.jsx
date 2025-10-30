@@ -7,13 +7,41 @@ import mail from "../assets/mail.svg";
 
 import "../styles/contactStyles.css";
 import Button from "../component/Button";
+import SpecialPrograms from "../component/SpecialProgram";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const ContactPage = () => {
-
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/send-email.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      
+      const result = await response.json();
+      if (result.success) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      alert('Error sending message. Please try again.');
+    }
+    
+    setIsSubmitting(false);
+  };
   return (
-    <div className="contactContainer">
+    <div className="contactContainer" style={{ minHeight: '100vh', paddingTop: '70px' }}>
       <div
         className="contactSection bg-cover bg-center "
         style={{ backgroundImage: `url(${contactBg})` }}
@@ -32,7 +60,7 @@ const ContactPage = () => {
             </h3>
           </div>
 
-          <div className="formCon pt-8 px-48">
+          <form onSubmit={handleSubmit} className="formCon pt-8 px-48">
             <div className="nameSec">
               <label
                 htmlFor="name"
@@ -43,7 +71,10 @@ const ContactPage = () => {
               <br />
               <input
                 type="text"
+                value={formData.name}
+                onChange={(e) => setFormData({...formData, name: e.target.value})}
                 className="outline-none border-none w-full p-2 my-4"
+                required
               />
             </div>
             <div className="emailSec">
@@ -56,7 +87,10 @@ const ContactPage = () => {
               <br />
               <input
                 type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({...formData, email: e.target.value})}
                 className="outline-none border-none w-full p-2 my-4"
+                required
               />
             </div>
             <div className="messageSec">
@@ -72,19 +106,21 @@ const ContactPage = () => {
                 id="message"
                 cols="30"
                 rows="10"
+                value={formData.message}
+                onChange={(e) => setFormData({...formData, message: e.target.value})}
                 className="outline-none border-none w-full p-2 my-4 resize-none"
+                required
               ></textarea>
             </div>
 
             <div className="btn flex justify-center p-4 pb-24">
               <Button
-                text="Submit"
+                text={isSubmitting ? "Sending..." : "Submit"}
                 color="white"
                 bgColor="#4b2e1e"
                 width="130px"
                 height="45px"
-                // to="#"
-                onClick={() => navigate("#")}
+                onClick={handleSubmit}
               />
               {/* <div
                 className=" btn22 text-white p-2 rounded text-center w-48 font-bold tracking-wide"
@@ -93,7 +129,7 @@ const ContactPage = () => {
                 Submit
               </div> */}
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -109,12 +145,10 @@ const ContactPage = () => {
               Head Office:
             </h3>
             <span className="font-Gilroy-regular -w-52 text-center text-sm font- tracking-wide">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              omnis eos esse officiis consequatur atque excepturi.
+              100 Owings ct suite 11
+              Reistertown  MD 21136
             </span>
           </div>
-
-          <div className="Contactline tabContactLine"></div>
         </div>
         {/* line Vertical */}
         {/* Phone Contact */}
@@ -134,9 +168,31 @@ const ContactPage = () => {
             >
               +1 443-545-1650
             </p>
+            <p
+              className="font-semibold text-base tracking-wide pb-2"
+              style={{ color: "#00051B" }}
+            >
+              +1 443-220-9506
+            </p>
+            <p
+              className="font-semibold text-base tracking-wide pb-2"
+              style={{ color: "#00051B" }}
+            >
+              +1 443-220-3040
+            </p>
+             <p
+              className="font-semibold text-base tracking-wide pb-2"
+              style={{ color: "#00051B" }}
+            >
+              Fax:
+            </p>
+             <p
+              className="font-semibold text-base tracking-wide pb-2"
+              style={{ color: "#00051B" }}
+            >
+              +1 443-545-7323
+            </p>
           </div>
-
-          <div className="Contactline tabContactLine"></div>
         </div>
         {/* line Vertical */}
         {/* MAil Contact */}
@@ -155,6 +211,9 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+
+    {/* Special Program */}
+    {/* <SpecialPrograms /> */}
 
       {/* footer */}
       <Footer />

@@ -89,7 +89,7 @@ const services = [
 
 
 return (
-  <>
+  <div style={{ minHeight: '100vh', paddingTop: '70px' }}>
     {/* Hero Section */}
     <motion.div
       className="serviceSection bg-cover bg-center"
@@ -169,10 +169,10 @@ return (
                             index
                           ]}
                         </h4>
-                        <p className="text-xs font-light">
+                        {/* <p className="text-xs font-light">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                           vel tincidunt nisi.
-                        </p>
+                        </p> */}
                       </div>
                     </motion.div>
                   )
@@ -192,7 +192,7 @@ return (
 
     {/* Footer */}
     <Footer />
-  </>
+  </div>
 );
 };
 
