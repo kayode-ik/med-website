@@ -92,14 +92,14 @@ const Footer = () => {
                   <span className="font-semibold text-sm">Head Office: </span>{" "}
                   <br />
                   <span className="text-sm webCont">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    100 Owings ct suite 11
                     <br />
-                    commodi ad alias iure inventore consequatur officia
+                    Reistertown  MD 21136
                   </span>
                   <span className="text-sm mobileCont">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    100 Owings ct suite 11
                     <br />
-                    commodi ad alias iure inventore consequatur officia
+                    Reistertown  MD 21136
                   </span>
                 </div>
               </div>
@@ -122,6 +122,15 @@ const Footer = () => {
                     <span className="text-sm">+1 443-545-1660</span>
                     <br />
                     <span className="text-sm">+1 443-545-1650</span>
+                    <br />
+                    <span className="text-sm">+1 443-220-9506</span>
+                    <br />
+                    <span className="text-sm">+1 443-220-3040</span>
+                    <br />
+                  </div>
+                  <span className="text-sm font-semibold ">Fax: </span> <br />
+                  <div className="numbersFooter">
+                    <span className="text-sm">+1 443-545-7323</span>
                     <br />
                   </div>
                 </div>
@@ -163,9 +172,9 @@ const Footer = () => {
                   <span className="font-semibold text-sm">Head Office: </span>{" "}
                   <br />
                   <span className="text-sm mobileCont">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    100 Owings ct suite 11
                     <br />
-                    commodi ad alias iure inventore consequatur officia
+                    Reistertown  MD 21136
                   </span>
                 </div>
               </div>
@@ -186,6 +195,8 @@ const Footer = () => {
                   <div className="numbersFooter">
                     <span className="text-sm">+1 443-545-1660</span>
                     <span className="text-sm">+1 443-545-1650</span>
+                    <span className="text-sm">+1 443-220-9506</span>
+                    <span className="text-sm">+1 443-220-3040</span>
                   </div>
                 </div>
                 <div className="contact2 pt-5 tracking-wide">
@@ -214,7 +225,7 @@ const Footer = () => {
           style={{ border: "1px solid #D33333" }}
         ></div>
         <span className="mobileFoot flex items-center pb-6 justify-center mt-4 tracking-wider uppercase">
-          Alternative dda home care 2024. All Rights Reserved
+          Alternative dda home care 2025. All Rights Reserved
         </span>
       </div>
     </div>

@@ -21,6 +21,7 @@ const Header = () => {
   const handleLinkClick = (path) => {
     setMenuOpen(false); // Close the slide-in menu
     navigate(path); // Navigate to the specified path
+    window.scrollTo(0, 0); // Scroll to top
   };
 
   return (
@@ -206,12 +207,16 @@ const Header = () => {
               <h3>Phone: </h3>
               <p>+1 443-545-1660</p>
               <p>+1 443-545-1650</p>
+              <p>+1 443-220-9506</p>
+              <p>+1 443-220-3040</p>
             </div>
             <div className="contactRight">
               <h3>Email: </h3>
               <p>
-                Altsupport1 <br /> @yahoo.com
+                Altsupport1 <br /> @gmail.com
               </p>
+              <h3>Fax: </h3>
+              <p>+1 443-545-7323</p>
             </div>
           </div>
 
@@ -220,10 +225,15 @@ const Header = () => {
               <h3>Phone: </h3>
               <p>+1 443-545-1660</p>
               <p>+1 443-545-1650</p>
+              <p>+1 443-220-9506</p>
+              <p>+1 443-220-3040</p>
             </div>
             <div className="contactRightTab">
               <h3>Email: </h3>
-              <p> Altsupport1@yahoo.com</p>
+              <p> Altsupport1@gmail.com</p>
+              <br />
+              <h3>Fax: </h3>
+              <p>+1 443-545-7323</p>
             </div>
           </div>
         </div>

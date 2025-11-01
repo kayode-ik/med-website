@@ -1,8 +1,16 @@
-# React + Vite
+# Local build
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- live changes - `npm run dev`
+- build dist - `npm run build`
+- zip dist directory
 
-Currently, two official plugins are available:
+# Update CPANEL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Go to Account -> Dashboard
+- Hover over the server icon - `Go to Cpanel`
+- Click file manager
+- open `public_html` directory
+- delete everything except `.htaccess` and `.well-known`
+- upload zipped dist to `public_html`
+- extract content to `public_html/`
+- move content to `public_html/`

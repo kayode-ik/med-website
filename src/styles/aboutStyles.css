@@ -239,7 +239,7 @@
   .missionLeft h2 {
     text-align: left !important;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 22px;
     padding-bottom: 2rem;
     color: var(--primary-color);
   }
